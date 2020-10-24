@@ -7,6 +7,7 @@ import viewHelper from '../viewHelpers';
 
 const checkLoginStatus = () => {
   firebase.auth().onAuthStateChanged((farmer) => {
+    console.warn(farmer);
     if (farmer) {
       const currentFarmer = userData.setCurrentFarmer(farmer);
       myNavbar.myNavbar(currentFarmer);
