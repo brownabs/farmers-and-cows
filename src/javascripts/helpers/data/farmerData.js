@@ -63,6 +63,7 @@ const deleteFarmer = (farmerUid) => {
 };
 
 const setCurrentFarmer = (farmerObj) => {
+  console.warn(farmerObj);
   const farmer = {
     image: farmerObj.photoURL,
     uid: farmerObj.uid,
