@@ -1,5 +1,8 @@
-# Cow Pasture
-By the end of this series of 6 lessons, students will be able to:
+# Prept
+> The Ranch is an application where users can logged in as farmers through Google Firebase Authentication and have the ability to add or remove cows from their ranch. 
+ 
+![farmer-cow gif](farmer-cow.gif)
+By the end of building this application, I was able to: 
 - Authenticate users using Firebase Authentication
 - Understand and create JSON
 - Demonstrate understanding of API calls using Postman
