@@ -42,9 +42,8 @@ const getSingleFarmer = (farmerUid) => new Promise((resolve, reject) => {
     .then((response) => {
       const farmer = Object.values(response.data);
       const thisFarmer = farmer[0];
-      resolve(thisFarmer)
-        .catch((error) => reject(error));
-    });
+      resolve(thisFarmer);
+    }).catch((error) => reject(error));
 });
 
 const deleteFarmer = (farmerUid) => {
@@ -80,4 +79,6 @@ const setCurrentFarmer = (farmerObj) => {
   return farmer;
 };
 
-export default { setCurrentFarmer, getAllFarmers, deleteFarmer };
+export default {
+  setCurrentFarmer, getAllFarmers, deleteFarmer, getSingleFarmer,
+};

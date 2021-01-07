@@ -2,7 +2,7 @@ import farmerData from '../../helpers/data/farmerData';
 import cowData from '../../helpers/data/cowData';
 
 const cowForm = () => {
-  $('#cow-form').html(`<h2>Add A Horsey Cow to Your Pasture</h2>
+  $('#cow-form').html(`<h2>Add A Cow to Your Ranch</h2>
   <div id="success-message"></div>
   <form>
     <div id="error-message"></div>
@@ -54,12 +54,6 @@ const cowForm = () => {
         .then(() => {
           $('#success-message').html('<div class="alert alert-success" role="alert">Your Cow Was Added!</div>');
         }).catch((error) => console.warn(error));
-
-      const successTimeOut = (() => {
-        $('#success-message').html('');
-      }, 6000);
-
-      successTimeOut();
 
       $('#breed').val('');
       $('#location').val('');

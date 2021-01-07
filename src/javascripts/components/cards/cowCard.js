@@ -15,7 +15,7 @@ const cowMaker = (cowObject) => {
   $('body').on('click', '.delete-cow', (e) => {
     e.stopImmediatePropagation();
     const firebaseKey = e.currentTarget.id;
-    $(`.card#${firebaseKey}`).remove();
+    $(`#${firebaseKey}`).remove();
     CowData.deleteCow(firebaseKey);
   });
   return domString;
