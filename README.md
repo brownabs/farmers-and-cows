@@ -1,4 +1,4 @@
-# Prept
+# The Ranch
 > The Ranch is an application where users can logged in as farmers through Google Firebase Authentication and have the ability to add or remove cows from their ranch. 
  
 ![farmer-cow gif](farmer-cow.gif)
