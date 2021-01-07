@@ -16,4 +16,3 @@ By the end of building this application, I was able to:
   - Creating an edit form to edit users
   - Delete cows and farmers (which include the farmer's cows)
   - Read/GET items from the API and render them to the DOM using Bootstrap cards
-- Deploy using Firebase Deploy
